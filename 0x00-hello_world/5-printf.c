@@ -1,9 +1,8 @@
 #include <stdio.h>
 /**
- *I thought it was a doc line
- * main - Entry point
+ * main - Function begins
  *
- * Return:Always 0 (Success)
+ * Return - Function ends
  */
 int main(void)
 {
