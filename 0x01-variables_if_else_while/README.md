@@ -1,1 +1,1 @@
-not the one you want to read
+This directory contains basic c programs that focus on if else and while statements
