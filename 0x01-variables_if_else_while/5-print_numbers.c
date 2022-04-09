@@ -10,7 +10,7 @@ int main()
 {
 	char ch = '1';
 
-	for (ch = '1'; ch <= '10'; ch++)
+	for (ch = '1'; ch <= '9'; ch++)
 	putchar(ch);
 	putchar('\n');
 	return (0);
