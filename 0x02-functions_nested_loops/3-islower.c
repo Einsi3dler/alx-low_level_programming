@@ -11,7 +11,7 @@ int _islower(int c)
 	int one = 1;
 	int zero = 0;
 
-	if (c >= 97 & c <= 122 )
+	if ((c >= 97) & (c <= 122) )
 	{
 		return one;
 	}
