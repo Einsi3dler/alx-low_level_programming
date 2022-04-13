@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- *
  *main - Entry point
  *
  * Return: Return returns 0
  *
- */ 
+ */
+
 int main(void)
 
 {
