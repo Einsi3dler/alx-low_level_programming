@@ -17,7 +17,7 @@ void print_alphabet(void)
 
 	for(ch = 'a'; ch >= 'z'; ch++)
 	{
-		_puthcar(ch);
+		_putcar(ch);
 	}
 	_putchar(ch);
 }
