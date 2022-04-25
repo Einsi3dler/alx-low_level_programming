@@ -1,1 +1,1 @@
-nonn empty readme that make sense
+# More pointers, arrays and strings
