@@ -6,7 +6,7 @@ factorial  - Gets the factorial of any number
 Return : Yes
 */
 
-int factorial(int n);
+int factorial(int n)
 {
 	if (n == 1)
 	{
