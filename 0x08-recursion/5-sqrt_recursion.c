@@ -16,24 +16,13 @@ int _sqrt_recursion(int n)
  * @i: integer parameter
  * Return: sqrt
  */
- int _sqrt (int n, int i)
- {
-	 if ((i * i) == n)
-	 {
-		 return (i);		 
-	 }
-	 if (n < 0)
-	 {
-		 return (-1);
-	 }
-	 if ((i * i) > n)
-	 {
-		 return (-1);
-	 }
-	 else
-	 {
-		 return (_sqrt(n, i + 1));
-	 }
- }
- 
-
+int _sqrt(int n, int i)
+{
+	if (n < 0)
+		return (-1);
+	if ((i * i) > n)
+		return (-1);
+	if (i * i == n)
+		return (i);
+	return (_sqrt(n, i + 1));
+}
