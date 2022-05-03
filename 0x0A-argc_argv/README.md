@@ -1,0 +1,1 @@
+This repository exists to show excersies done for ALX about argc and argv
