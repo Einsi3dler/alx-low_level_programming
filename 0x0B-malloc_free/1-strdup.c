@@ -5,8 +5,8 @@
  * @str: string to be copied.
  *Return: pointer of an array of chars
  */
- char *_strdup(char *str)
- {
+char *_strdup(char *str)
+{
 	 char *cr;
 	 unsigned int i, p;
 
@@ -14,19 +14,18 @@
 	{
 		return (NULL);
 	}
-       	for (i = 0; str[i] != '\0'; i++)
-	 {		 
-	 }
-	i = i + 1;
-	cr = (char *)malloc(i * sizeof(char));
-	
+	for (i = 0; str[i] != '\0'; i++)
+	{
+	}
+	cr = (char *)malloc((i + 1) * sizeof(char));
+
 	if (cr == NULL)
-	 {
-		 return (NULL);
-	 }
+	{
+		return (NULL);
+	}
 	for (p = 0; p <= i; p++)
-	 {
-		 str[p] = cr[p];
-	 }
+	{
+		cr[p] = str[p];
+	}
 	return (cr);
- }
+}
