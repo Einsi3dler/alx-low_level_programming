@@ -9,15 +9,24 @@
  {
 	 char *cr;
 	 unsigned int i, p;
-	 
-	 for (i = 0; str[i] == '\0'; i++)
+
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+       	for (i = 0; str[i] != '\0'; i++)
 	 {		 
 	 }
-	 i = i + 1; 
-	 cr = (char *)malloc(i * sizeof(char));
-	 for (p = 0; p <= i; p++)
+	i = i + 1;
+	cr = (char *)malloc(i * sizeof(char));
+	
+	if (cr == NULL)
+	 {
+		 return (NULL);
+	 }
+	for (p = 0; p <= i; p++)
 	 {
 		 str[p] = cr[p];
 	 }
-	 return (cr);
+	return (cr);
  }
