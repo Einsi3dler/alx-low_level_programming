@@ -7,15 +7,13 @@
  */
 
 list_t *add_node(list_t **head, const char *str)
-
 {
 	size_t i = 0;
+	list_t *ptr = malloc(sizeof(list_t));
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
 	}
-	list_t *ptr = malloc(sizeof(list_t));
-
 	if (ptr == NULL)
 	{
 		return (NULL);
