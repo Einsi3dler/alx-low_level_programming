@@ -6,7 +6,7 @@
  *@n: contains the value to be inputed
  *Return: Returns the address of the head
  */
- 
+
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
 	listint_t *ptr, *temp;
