@@ -1,0 +1,19 @@
+#include "lists.h"
+/**
+ * free_listint - frees the list totally
+ * @head: the address of the libary
+ * Return: return nothing
+ */
+
+  void free_listint(listint_t *head)
+{
+	listint *temp;
+
+	while (head != NULL)
+	{
+		temp = head;
+		head = head->next;
+		free(temp->str);
+		free(temp);
+	}
+}
