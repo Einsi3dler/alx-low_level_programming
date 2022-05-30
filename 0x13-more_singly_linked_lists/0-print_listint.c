@@ -13,9 +13,9 @@ size_t print_listint(const listint_t *h)
 	count_e = 0;
 	while (h != NULL)
 	{
-		if (h->n == NULL)
+		if (!h->n)
 		{
-			return (NULL);
+			printf("Null");
 		}
 		else
 		{
