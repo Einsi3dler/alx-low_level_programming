@@ -1,13 +1,14 @@
 #include "lists.h"
 /**
  * add_nodeint - adds node at the head
- * @n: variable in the node to be added
- * return: returns the list init
+ * @head: the address of the head
+ * Return: returns the address of the head
  */
 listint_t *add_nodeint(listint_t **head, const int n)
 {
 	listint_t *temp, *ptr;
-	ptr = malloc (sizeof(listint_t));
+	ptr = malloc(sizeof(listint_t));
+
 	if (ptr == NULL)
 	{
 		return (NULL);
