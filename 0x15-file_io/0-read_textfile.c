@@ -28,8 +28,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	{
 		return (0);
 	}
-	n = read(x, buf, letters);
-	p = write(STDOUT_FILENO, buf, n);
+	n = read(x, buff, letters);
+	p = write(STDOUT_FILENO, buff, n);
 
 	close(x);
 
