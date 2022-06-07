@@ -11,13 +11,13 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int x;
 	ssize_t n, p;
-	cahr *buff;
+	char *buff;
 
 	if (!filename)
 	{
 		return (0);
 	}
-	x = open(filename, 0_RDONLY);
+	x = open(filename, O_RDONLY);
 
 	if(x == -1)
 	{
@@ -35,5 +35,5 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	free(buff);
 
-	return (p)
+	return (p);
 }
