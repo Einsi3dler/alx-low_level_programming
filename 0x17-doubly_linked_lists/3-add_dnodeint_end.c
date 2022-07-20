@@ -22,7 +22,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 
 	guide = *head;
 
-	if (head == NULL)
+	if (*head == NULL)
 	{
 		*head  = end_node;
 	}
