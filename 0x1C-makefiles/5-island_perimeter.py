@@ -3,6 +3,8 @@
 This File calculates perimeter of an island
 to specific specifications
 """
+
+
 def island_perimeter(grid):
     """
     This function accepts value grid
@@ -21,8 +23,8 @@ def island_perimeter(grid):
                 continue
 
     if perimeter == 0:
-        return (perimeter)
-    
+        return(perimeter)
+
     else if perimeter == 1:
 
         perimeter = perimeter * 4
