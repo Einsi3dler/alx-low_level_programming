@@ -25,7 +25,7 @@ def island_perimeter(grid):
     if perimeter == 0:
         return(perimeter)
 
-    else if perimeter == 1:
+    elif perimeter == 1:
 
         perimeter = perimeter * 4
 
