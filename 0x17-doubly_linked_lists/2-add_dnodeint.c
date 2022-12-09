@@ -1,12 +1,14 @@
 #include "lists.h"
 /**
  * add_dnodeint - this adds nodes at the begining
- * @head - this contains a pointer to the head node
- * @n- contains the int to be put into the node
- * Returns: returns the head node
+ * @head: this contains a pointer to the head node
+ * @n: contains the int to be put into the node
+ * Return: returns the head node
  */
-dlistint_t *add_dnodeint(dlistint_t **head, const int n) {
+dlistint_t *add_dnodeint(dlistint_t **head, const int n)
+{
 	dlistint_t *new_Node;
+
 	new_Node = malloc(sizeof(dlistint_t));
 	if (new_Node == NULL)
 	{
