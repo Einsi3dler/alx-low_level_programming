@@ -1,8 +1,9 @@
 #include "hash_tables.h"
-/*
+/**
  * hash_table_get - gets a value for the key pair
  * @ht: address of hash map
  * @key: well lol what else do you want to know
+ * Return: returns value from the key
  */
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
