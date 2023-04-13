@@ -2,7 +2,8 @@
 /**
  * print_array - this prints an array
  * @a: the array to print
- * @n: array's length
+ * @l: low p[oint
+ * @h: high point
  */
 
 void print_array(int *a, int l, int h)
@@ -25,6 +26,7 @@ void print_array(int *a, int l, int h)
  * @array: array to be searched
  * @size: size of array
  * @value: value to be searched for an array
+ * Return: returns index of value if
  */
 int binary_search(int *array, size_t size, int value)
 {
@@ -40,16 +42,16 @@ int binary_search(int *array, size_t size, int value)
 	low = 0;
 	high = size;
 
-	while(low != high)
+	while (low != high)
 	{
-		mid = ((high+1)-low)/2;
+		mid = ((high + 1) - low) / 2;
 		mid = mid - 1;
 		index = low + mid;
-		printf("Searching in array: ")
+		printf("Searching in array: ");
 		print_array(array, low, high);
 		if (array[index] == value)
 		{
-			return(index);
+			return (index);
 		}
 		else
 		{
