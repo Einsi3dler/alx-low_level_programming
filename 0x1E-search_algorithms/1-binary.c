@@ -30,10 +30,7 @@ void print_array(int *a, int l, int h)
  */
 int binary_search(int *array, size_t size, int value)
 {
-	size_t low;
-	size_t high;
-	size_t mid;
-	size_t index;
+	size_t low, high, mid, index;
 
 	if (array == NULL)
 	{
